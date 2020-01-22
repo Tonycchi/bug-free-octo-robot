@@ -1,0 +1,11 @@
+before_install:
+    - chmod +x gradlew
+install: true
+language: java
+os: linux
+dist: trusty
+
+jdk: openjdk 8
+
+script:
+    - ./gradlew build --stacktrace
